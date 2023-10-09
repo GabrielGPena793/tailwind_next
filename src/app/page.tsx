@@ -2,6 +2,8 @@ import { SettingsTabs } from '@/components/SettingsTabs'
 import * as Input from '@/components/Input'
 import * as FileInput from '@/components/Form/FileInput'
 import { Mail } from 'lucide-react'
+import { Select } from '@/components/Form/Select'
+import { SelectItem } from '@/components/Form/Select/SelectItem'
 
 export default function Home() {
   return (
@@ -112,7 +114,11 @@ export default function Home() {
             >
               Country
             </label>
-            <div></div>
+
+            <Select placeholder="Select a country">
+              <SelectItem text="Brasil" value="br" />
+              <SelectItem text="Unite State" value="us" />
+            </Select>
           </div>
 
           <div className="grid grid-cols-form gap-6 pt-5">
@@ -122,7 +128,13 @@ export default function Home() {
             >
               Timezone
             </label>
-            <div></div>
+            <Select placeholder="Select a country">
+              <SelectItem
+                text="Pacific Standard Time (UTC−08:00)"
+                value="utc8"
+              />
+              <SelectItem text="America São Paulo (UTC−03:00)" value="utc3" />
+            </Select>
           </div>
 
           <div className="grid grid-cols-form gap-6 pt-5">
