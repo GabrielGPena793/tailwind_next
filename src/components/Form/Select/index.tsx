@@ -1,7 +1,7 @@
 'use client'
 
 import * as RadixSelect from '@radix-ui/react-select'
-import { Check, ChevronDown } from 'lucide-react'
+import { ChevronDown } from 'lucide-react'
 import { ReactNode } from 'react'
 
 interface SelectProps extends RadixSelect.SelectProps {
